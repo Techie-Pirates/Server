@@ -16,6 +16,7 @@ lerna-debug.log*
 
 
 #env
+.env-cmdrc
 .env
 .env.local
 .env.development.local
