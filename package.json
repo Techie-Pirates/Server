@@ -8,8 +8,11 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "db:dev:migrate":"npx env-cmd --environments development prisma migrate dev",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
+    "start:nest:dev":"npx env-cmd --environments development nest start --watch",
+    "prisma:dev:studio":"npx env-cmd --environments development prisma studio",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
